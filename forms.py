@@ -9,3 +9,5 @@ class AddTaskForm(FlaskForm):
 
 class DeleteTaskForm(FlaskForm):
     submit = SubmitField('delete')
+
+

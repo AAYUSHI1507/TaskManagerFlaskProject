@@ -41,6 +41,7 @@ def edit(task_id):
     return redirect(url_for('index'))
 
 
+
 @app.route('/delete/<int:task_id>',methods=['GET', 'POST'])
 def delete(task_id):
     task = Task.query.get(task_id)

@@ -5,5 +5,6 @@ class Task(db.Model):
     title = db.Column(db.String(100),nullable = False)
     date = db.Column(db.Date , nullable = False)
 
+
     def __repr__(self):
         return f'{self.title } created on {self.date}'  
