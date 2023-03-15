@@ -31,7 +31,7 @@ def edit(task_id):
             t = Task(title=form.title.data, date = datetime.utcnow())
             db.session.add(t)
             db.session.commit()
-            flash('Task has been updated')
+            flash('Task has been edited successfully')
             return redirect(url_for('index'))
         
         form.title.data = task.title
